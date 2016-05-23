@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="ISO-8859-1">
+<title>Insert title here</title>
+<script src="Scripts/angular.js"></script>
+<script src="Scripts/Registration.js"></script>
+</head>
+<body>
+	
+<div ng-app="myApp" ng-controller="regController">
+<div>
+First Name : {{ employee.firstName }}
+</div>
+
+<div>
+Last Name : {{ employee.lastName }}
+</div>
+
+<div>
+Gender : {{ employee.gender }}
+</div>
+
+<div>
+ Name : {{ jewellery.Name}}
+<img width=100 height=100 ng-src=" {{jewellery.image}}">
+
+<br>
+
+ two way data binding
+
+<input type="text" ng-model="message" />
+{{message}}
+</div>
+</div>
+
+
+<div >
+
+	<!-- <div ng-app="myApp2" ng-controller="regController2">
+		<table>
+			<thead>
+				<th>First Name</th>
+				<th>Last Name</th>
+				<th>Gender</th>
+
+			</thead>
+			<tbody>
+				<tr ng-repeat="employees in employees">
+					<td>{{ employees.firstName }}</td>
+					<td>{{ employees.lastName }}</td>
+					<td>{{ employees.gender }}</td>
+				</tr>
+
+
+			</tbody>
+		</table>
+
+
+
+	</div> -->
+	</div>
+
+</body>
+</html>
